@@ -16,7 +16,7 @@
 
 language: python
 python:
-    - "2.7"
+    - "3.7"
 
 sudo: false
 cache:
@@ -24,9 +24,9 @@ cache:
         - "~/.platformio"
 
 install:
-    # - pip install -U platformio
+    - pip install -U platformio
     # Use development version of PlatformIO 3.2 (temporary)
-    - pip install -U https://github.com/platformio/platformio/archive/develop.zip
+    # - pip install -U https://github.com/platformio/platformio/archive/develop.zip
 
 
 script:
@@ -36,5 +36,5 @@ script:
     - echo "List remote devices"
     - platformio remote device list
 
-    - echo "Run embedded test on remote devices (Arduino Uno and NodeMCU ESP8266)"
-    - platformio remote test -e uno -e nodemcu
+    - echo "Run embedded test on remote devices"
+    - platformio remote test -e lplm4f120h5qr
