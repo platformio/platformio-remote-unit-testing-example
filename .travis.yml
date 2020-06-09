@@ -36,5 +36,5 @@ script:
     - echo "List remote devices"
     - platformio remote device list
 
-    - echo "Run embedded test on remote devices (Arduino Uno and NodeMCU ESP8266)"
+    - echo "Run embedded test on remote devices"
     - platformio remote test -e lplm4f120h5qr
