@@ -15,6 +15,7 @@ void blink_once(unsigned int delay_ms)
 
 
 void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
     Serial.begin(9600);
     Serial.println("Program started!");
 }
